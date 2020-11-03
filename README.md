@@ -1,3 +1,5 @@
+The setup directions for this course are described below. See the official course videos for a detailed video walkthrough of these steps.
+
 Installing Java
 ----
 
@@ -42,3 +44,30 @@ Installing a Text Editor and Git
 
 3. Run the git installer. When you get to the option that says "Choosing the default text editor used by git", select the editor you installed in part 1.
 
+Using Git to Download Course Material
+----
+
+1. Open a terminal window on your computer. If you're not sure how to do this, see below:
+
+#### Windows
+
+Using the start menu, run "git bash". If you can't find it, the default place it would have been installed is `C:\Program Files\Git\bin`. 
+
+#### Mac OS
+
+Press command+space to open the Spotlight menu. Type "terminal". Press enter.
+
+2. In your home directory, enter the command: `git clone https://github.com/joshHug/E234.git`. This will copy the coure repository to your computer.
+
+Using IntelliJ to Run Code
+----
+
+1. Open IntelliJ.
+
+2. From the main menu, click "Open or Import".
+
+3. Open the lec1 folder inside the E234 folder.
+
+4. On the sidebar to the left click "HelloNumbers".
+
+5. Click the green run button at the top left and the code should run, printing out the numbers from 0 to 9.
