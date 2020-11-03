@@ -24,7 +24,21 @@ Install the newest version of Java using the appropriate package manager, e.g. `
 
 `sudo apt install openjdk-15-jdk git`
 
-Installing Git
+Installing IntelliJ
 ----
 
-etc
+1. Download the community edition of IntelliJ from IDEA's website: [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/).
+
+2. Start IntelliJ.
+
+3. In the bottom right hand corner click "Configure", then "Plugins". Use the search box to search for "Java Visualizer" by Eli Lipsitz. Install the plugin.
+
+Installing a Text Editor and Git
+----
+
+1. Install a text editor on your computer. We recommend Sublime Text [https://www.sublimetext.com/](https://www.sublimetext.com/), Atom [https://atom.io/](https://atom.io/) or Visual Studio Code [https://code.visualstudio.com/](https://code.visualstudio.com/). 
+
+2. Download the Git version control software from [http://git-scm.com/download/](http://git-scm.com/download/). 
+
+3. Run the git installer. When you get to the option that says "Choosing the default text editor used by git", select the editor you installed in part 1.
+
