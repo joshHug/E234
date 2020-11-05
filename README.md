@@ -38,7 +38,7 @@ Installing IntelliJ
 Installing a Text Editor and Git
 ----
 
-1. Install a text editor on your computer. We recommend Sublime Text [https://www.sublimetext.com/](https://www.sublimetext.com/), Atom [https://atom.io/](https://atom.io/) or Visual Studio Code [https://code.visualstudio.com/](https://code.visualstudio.com/). 
+1. Install a text editor on your computer. We recommend Sublime Text [https://www.sublimetext.com/](https://www.sublimetext.com/), Atom [https://atom.io/](https://atom.io/) or Visual Studio Code [https://code.visualstudio.com/](https://code.visualstudio.com/). See [this link](https://www.techradar.com/best/best-text-editors) for a review of these text editors.
 
 2. Download the Git version control software from [http://git-scm.com/download/](http://git-scm.com/download/). 
 
