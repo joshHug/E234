@@ -1,37 +1,38 @@
 package lec2;
 
-
 import org.junit.jupiter.api.Test;
+
 import static com.google.common.truth.Truth.assertThat;
 
 public class TestSort {
     @Test
     public void testSort() {
-        String[] input = {"i", "have", "an", "egg"};
-        String[] expected = {"an", "egg", "have", "i"};
+        String[] x = {"i", "have", "an", "egg"};
+        String[] expectedOutput = {"an", "egg", "have", "i"};
+        Sort.sort(x);
 
-        Sort.sort(input);
-        assertThat(input).isEqualTo(expected);
-    }
-
-    @Test
-    public void testFindSmallest() {
-        String[] input = {"i", "have", "an", "egg"};
-        int expected = 2;
-        int actual = Sort.findSmallest(input, 0);
-        assertThat(actual).isEqualTo(expected);
-
-        expected = 3;
-        actual = Sort.findSmallest(input, 3);
-        assertThat(actual).isEqualTo(expected);
+        assertThat(x).isEqualTo(expectedOutput);
     }
 
     @Test
     public void testSwap() {
-        String[] input = {"some", "people", "eat", "apricots"};
-        String[] expected = {"eat", "people", "some", "apricots"};
-        Sort.swap(input, 0, 2);
-        assertThat(input).isEqualTo(expected);
+        String[] x = {"i", "have", "an", "egg"};
+        Sort.swap(x, 1, 3);
+
+        String[] expectedResult = {"i", "egg", "an", "have"};
+        assertThat(x).isEqualTo(expectedResult);
     }
 
+    @Test
+    public void testFindSmallest() {
+        String[] x = {"i", "have", "an", "egg"};
+        int smallestIndex = Sort.findSmallest(x, 1);
+        int expectedresult = 2;
+
+        assertThat(smallestIndex).isEqualTo(expectedresult);
+
+        smallestIndex = Sort.findSmallest(x, 3);
+        expectedresult = 3;
+        assertThat(smallestIndex).isEqualTo(expectedresult);
+    }
 }

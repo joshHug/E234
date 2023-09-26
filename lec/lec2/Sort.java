@@ -1,17 +1,20 @@
 package lec2;
 
+import java.util.Arrays;
+
 public class Sort {
+    /** Sorts the strings in x alphabetically. */
     public static void sort(String[] x) {
         sort(x, 0);
     }
 
-    /** Sorts x starting from position given. */
+    /** Sort the strings in x alphabetically, but starting from position start. */
     public static void sort(String[] x, int start) {
-        if (start >= x.length) {
+        if (start == x.length) {
             return;
         }
-        int smallestIndex = findSmallest(x, start);
-        swap(x, smallestIndex, start);
+        int smallestGreenItemIndex = findSmallest(x, start);
+        swap(x, start, smallestGreenItemIndex);
         sort(x, start + 1);
     }
 
@@ -22,10 +25,7 @@ public class Sort {
         x[b] = temp;
     }
 
-    /** Gives the index of the smallest item starting from position
-     *  start. For example if x = ["a", "z", "a", "c"], returns
-     *  2.
-     */
+    /** Finds the index of the smallest string starting from x[start] */
     public static int findSmallest(String[] x, int start) {
         int smallestIndex = start;
         for (int i = start; i < x.length; i += 1) {
